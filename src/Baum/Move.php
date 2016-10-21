@@ -163,7 +163,7 @@ class Move {
     );
 
     if ( $this->node->timestamps )
-      $updateConditions[$this->node->getUpdatedAtColumn()] = $this->node->freshTimestamp();
+      $updateConditions[$this->node->getUpdatedAtColumn()] = $this->node->freshTimestampString();
 
     return $this->node
                 ->newNestedSetQuery()
