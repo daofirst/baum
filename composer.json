@@ -1,5 +1,5 @@
 {
-  "name": "Infinite/node",
+  "name": "infinite/node",
   "type": "library",
   "description": "Baum is an implementation of the Nested Set pattern for Eloquent models.",
   "keywords": ["nested set", "laravel", "laravel 4", "laravel 5", "eloquent", "database"],
