@@ -340,6 +340,12 @@ abstract class Node extends Model {
         $builder->where($scopeFld, '=', $this->$scopeFld);
     }
 
+    //region 修改部分--添加关联查询
+    if($this->relations){
+      $builder->with($this->relations);
+    }
+    //endregion
+
     return $builder;
   }
 
