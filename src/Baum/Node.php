@@ -341,8 +341,8 @@ abstract class Node extends Model {
     }
 
     //region 修改部分--添加关联查询
-    if($this->relations){
-      $builder->with($this->relations);
+    if(count($this->relations)){
+      $builder->with(collect($this->relations)->keys()->toArray());
     }
     //endregion
 
